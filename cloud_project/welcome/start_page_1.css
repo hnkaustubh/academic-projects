@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.row
+{
+	width: 1140px;
+	margin: 0 auto;
+}
+
+body
+{
+	font-family: arial;
+}
+
+.hero
+{
+	position: absolute;
+	width: 1240px;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+header
+{
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("start_page_1.jpg");
+	height: 167vh;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1
+{
+    font-size: 60px;
+	color: #FFFFFF;
+}
+
+.client_login
+{
+    
+    position: absolute;
+    width: 500px;
+    top: 55%;
+    left: 10%;
+}
+
+.architect_login
+{
+    position: absolute;
+    width: 500px;
+    top: 55%;
+    left: 50%;
+    
+}
