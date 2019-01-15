@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Lamps</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: #FFA07A">
+	<div class="first">
+		<ul>
+			<li><a href="smartsolutions.php">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="products.php">Products and Services</a>
+				<ul></ul>
+			</li>
+			<li><a href="news.html">News</a></li>
+			<li><a href="contacts.php">Contacts</a></li>
+			<li><a href="admin.php">Admin</a></li>
+		</ul>
+	</div>
+	<br><br><br>
+	<div class="smartlamps" style="background-image: url('wheat.jpg'); height: 180px;">
+		<h1 style="color: black; margin-left: 20px; top: 20px; position: relative;">Smart Lights</h1>
+	</div>
+
+	<div style="font-size: 20px; /*background-color: green;*/ margin-top: -50px; color: black; position: relative; top: 60px;">
+		<p>Street lighting is one of the most important aspects of a city&#39s infrastructure, which illuminate a city&#39s streets during dark hours of the day. Conventional street lighting systems in areas with a low frequency of passersby are online most of the night without purpose. The consequence is that a large amount of power is wasted meaninglessly. Smart street lights is a project on intelligent illumination control of street lights to optimize the problem of power consumption and illumination of the streets, late in the night.</p>
+		<p>Making cities smarter helps improve city services and increases citizens&#39 quality of life. Information and communication technologies (ICT) are fundamental for progressing towards smarter city environments. Smart City software platforms potentially support the development and integration of Smart City applications. <br><br><br>
+		<img src="smartstreet.jpg" style="margin-left: 350px;"><br><br>
+	This project is designed to develop, implement, and validate an IOT-based cloud infrastructure system as a Software as a Service(SaaS) for Smart Streets in a smart city. As shown in the figure above, a smart street consists of several smart nodes. Each node is installed on a utility pole on a street. Further, each node is equipped with a few sensors. A smart cluster controller among smart nodes will be used to control few such connected smart nodes and supports communication with the back-end server in order to send the collected sensor data for all the nodes. In addition, each smart node has wireless communication capability, which supports node-to-cluster communication. Each cluster node has internet connectivity.</p>
+
+	<h3>System Design and Architecture</h3>
+	<img src="architecture.png" style="margin-left: 80px;">
+	<p>The above architecture shows the outline of our infrastructure.
+
+Several sensors constitute towards the forming of one Smart Node. The above shown nodes do not have any communication mechanism with each other. All the Smart Nodes send the sensor data to the cluster. Therefore 4 clusters take care of the underlying 20 smart nodes.
+
+Cluster acts as an interface to transfer/transmit its underlying sensor&#39s data to the cloud database. The data from the cluster is sent to the cloud service provider as IP Packets through the ISP. These IP Packets are then received by the Gateway router of the cloud provider and the sensor data is taken out from the packets and then stored in the Database.<br><br>
+The data from the sensors will be sent to the cloud provider&#39s database. Then the data is organized in a framework (web page). The statistics, performance and availability of the sensors and its data can be viewed in a structured manner through a webpage. This information will be helpful to the Clients, maintenance people and the infrastructure managers. The smart node can be configured by the maintenance people after viewing and fetching the visual report of the sensors. Configuration of the sensors by the authoritative staffs is possible as the status of each cluster, smart node and each sensor is clearly visible.
+
+The data can be easily accessed by throwing the API request to the Cloud Provider Database. According to the response received, the data is manipulated and plotted/marked. The UI design of the IOT framework allows us to communicate with the cloud service using the ISP. Request packets are sent, and the response packets are received like an HTTP request and response (API request/response).</p>
+<img src="system.png" style="margin-left: 250px;">
+</div>
+</body>
+</html>
